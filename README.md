@@ -6,9 +6,9 @@
 
 **Email:** JamesCornejo718@gmail.com
 
-**Department:** Department of Aerospace Engineering and Engineering Mechanics
+**Department:** Department of Aerospace Engineering and Engineering Mechanics (http://www.ae.utexas.edu/)
 
-**University:** The University of Texas at Austin
+**University:** The University of Texas at Austin (https://www.utexas.edu/)
 
 **Level:** Undergraduate - Sophomore
 
@@ -16,4 +16,4 @@
 
 **Course Webpage:** http://shahmoradi.org/ICP2017F/
 
-**Photo**:
+**Photo**: ![
