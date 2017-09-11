@@ -16,4 +16,4 @@
 
 **Course Webpage:** http://shahmoradi.org/ICP2017F/
 
-**Photo**: ![
+**Photo**: ![Engineering](http://engr.utexas.edu/images/visual-guidelines/Cockrell_RGB_formal_ASE_EM.png)
