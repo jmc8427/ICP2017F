@@ -18,8 +18,15 @@
 
 **Photo**: ![Engineering](http://engr.utexas.edu/images/visual-guidelines/Cockrell_RGB_formal_ASE_EM.png)
 
-[homework](./hw)
+[homework](./hw) This contains all the homework.
 
-[quiz](./quiz)
+[quiz](./quiz) This contains all my quiz submissions.
 
-[exam](./exam)
+[exam](./exam) This contains all my exam submissions.
+
+For questions and troubleshooting, please contact:
+
+James Cornejo 
+
+JamesCornejo718@gmail.com
+
