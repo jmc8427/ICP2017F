@@ -16,7 +16,9 @@
 
 **Course Webpage:** http://shahmoradi.org/ICP2017F/
 
-**Photo**: ![Engineering](http://hkmdb.com/db/images/people/4202/RichardNgYiuHon-75-b.jpg)
+**Photo**: 
+
+![Engineering](http://hkmdb.com/db/images/people/4202/RichardNgYiuHon-75-b.jpg)
 
 [homework](./hw) This contains all the homework.
 
