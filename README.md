@@ -16,4 +16,19 @@
 
 **Course Webpage:** http://shahmoradi.org/ICP2017F/
 
-**Photo**: ![Engineering](http://engr.utexas.edu/images/visual-guidelines/Cockrell_RGB_formal_ASE_EM.png)
+**Photo**: 
+
+![Engineering](http://hkmdb.com/db/images/people/4202/RichardNgYiuHon-75-b.jpg)
+
+[homework](./hw) This contains all the homework.
+
+[quiz](./quiz) This contains all my quiz submissions.
+
+[exam](./exam) This contains all my exam submissions.
+
+For questions and troubleshooting, please contact:
+
+James Cornejo 
+
+JamesCornejo718@gmail.com
+
