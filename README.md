@@ -20,11 +20,11 @@
 
 ![Engineering](http://hkmdb.com/db/images/people/4202/RichardNgYiuHon-75-b.jpg)
 
-[homework](./hw) This directory contains all my homework submissions, each of which is a folder properly named with homework number, containing the homework submission.
+[homework](./hw): This directory contains all my homework submissions, each of which is a folder properly named with homework number, containing the homework submission.
 
-[quiz](./quiz) This directory contains all my quiz submissions, each of which is a folder properly named with quiz number, containing the quiz submission.
+[quiz](./quiz): This directory contains all my quiz submissions, each of which is a folder properly named with quiz number, containing the quiz submission.
 
-[exam](./exam) This directory contains all my exam submissions, each of which is a folder properly named with exam name or number, containing the exam submission.
+[exam](./exam): This directory contains all my exam submissions, each of which is a folder properly named with exam name or number, containing the exam submission.
 
 For questions and troubleshooting, please contact:
 
