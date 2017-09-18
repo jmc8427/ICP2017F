@@ -1,11 +1,23 @@
 **A)**
 
-git branch test1
+input
 
-git branch test2
+    git branch test1
+
+    git branch test2
 
 **B)**
 
-git checkout test1
+input
 
-cd 
+    git checkout test1
+
+output
+
+    Switched to branch "test1"
+    
+    vim test.txt
+
+**C)**
+
+    
