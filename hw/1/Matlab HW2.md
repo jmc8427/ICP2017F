@@ -173,6 +173,80 @@ ans =
    -2147483648
    
         Smallest integer is -2147483648
+        
+**3)**
+
+1\2
+
+    ans =
+
+     2
+     
+    Divides 2 by 1
+     
+1/2
+
+    ans =
+
+    0.5000
+    
+    Divides 1 by 2
+
+int8(1/2)
+
+ans =
+
+  int8
+
+   1
+   
+        LATER
+        
+int8(1/3)
+
+ans =
+
+  int8
+
+   0
+   
+        LATER
+   
+-5^2
+
+ans =
+
+   -25
+   
+        Squares the integer 5, then mulitplies by -1
+        
+(-5) ^ 2
+
+ans =
+
+   25
+   
+        Squares the integer -5
+        
+10-6/2
+
+ans =
+
+   7
+   
+        Divides 6 by 2, then subtracts answer from 10
+        
+5*4/2*3
+
+ans =
+
+   30
+   
+        Multiplies 5 by 4, divides answer by 2, then times answer by 3
+      
+
+
+
    
    
 
