@@ -6,9 +6,9 @@ a = 1
   
     a =
 
-     1
+    1
      
-     Sets the value of a to 1.
+    Sets the value of a to 1.
      
 b = 'x'
  
@@ -78,11 +78,41 @@ f = ['abcd']
 
     'abcd'
     
-    Sets the value of f to the 1x4 matrix of the product of variables abcd
+    Sets the value of f to the 1x4 matrix of the variables a, b, c, and d
+    
+g = {'a' 'b' 'c' 'd'}
+
+    g =
+
+    1×4 cell array
+
+    'a'    'b'    'c'    'd'
+    
+    Created a 1x4 cell array with the respective values of a, b, c, and d
+    
+h = { a b c d }
+
+    h =
+
+    1×4 cell array
+
+    [1]    'x'    [1]    [1×4 double]
+    
+    Created a 1x4 cell array 
+    
+whos d e f g h
+
+     Name      Size            Bytes  Class     Attributes
+
+    d         1x4                32  double              
+    e         1x4                 8  char                
+    f         1x4                 8  char                
+    g         1x4               456  cell                
+    h         1x4               491  cell                
     
 
     
-
+**2)**
 
 
 
