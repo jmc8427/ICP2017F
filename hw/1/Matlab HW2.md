@@ -114,6 +114,65 @@ whos d e f g h
     
 **2)**
 
+int8(128)
 
+ans =
 
+  int8
+
+   127
+    
+        If you try to store a larger integer than the max value into int8, such as 128, the value isn't registered and the integer is   just       set to 127
+    
+int8 (-129)
+
+ans =
+
+  int8
+
+   -128
+   
+       Trying to set int8 to a smaller integer than the min causes the int8 to just set to the minimum value.
+
+intmax ('int16')
+
+ans =
+
+  int16
+
+   32767
+   
+        Largest integer for int16 is 32767
+        
+intmin ('int16')
+
+ans =
+
+  int16
+
+   -32768
+   
+         Smallest integer for int16 is -32768
+         
+intmax ('int32')
+
+ans =
+
+  int32
+
+   2147483647
+  
+        Largest integer is 2147483647
+        
+intmin ('int32')
+
+ans =
+
+  int32
+
+   -2147483648
+   
+        Smallest integer is -2147483648
+   
+   
 
