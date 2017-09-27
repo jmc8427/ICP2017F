@@ -243,10 +243,102 @@ ans =
    30
    
         Multiplies 5 by 4, divides answer by 2, then times answer by 3
+        
+**4)**
+
+    a = [1 0; 2 1]
+
+    a =
+
+     1     0
+     2     1
       
+    b = [-1 2; 0 1]
 
+    b =
+  
+    -1     2
+     0     1   
 
+    c = [3;2]
 
+    c =
+
+     3
+     2
    
-   
+    d = 5
 
+    d =
+
+     5  
+     
+a + b
+
+    ans =
+
+     0     2
+     2     2
+     
+    This is adding the matrix of a and b together in each of their respective positions
+    
+a .* b
+
+    ans =
+
+    -1     0
+     0     1
+     
+    Multiplies the matrix of a and b together, the period signifies that 
+
+a * b
+
+    ans =
+
+    -1     2
+    -2     5
+
+a * c
+
+    ans =
+
+     3
+     8
+     
+     Multiplies matrix a by the values of c in their respective rows
+     
+a + c
+
+    ans =
+
+     4     3
+     4     3
+     
+     Adds the value of c in the first row to the value of a in the first row, and same with second row
+    
+a + d
+
+    ans =
+
+     6     5
+     7     6
+     
+     Adds the value of d to each of the numbers in the a matrix
+    
+a .* d
+
+    ans =
+
+     5     0
+    10     5
+    
+    Multiplies the matrix of a by the value of d
+    
+a * d
+
+    ans =
+
+     5     0
+    10     5
+    
+    Multiplies the matrix of a by the value of d
