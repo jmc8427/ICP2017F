@@ -289,7 +289,7 @@ a .* b
     -1     0
      0     1
      
-    Multiplies the matrix of a and b together, the period signifies that 
+    Multiplies the matrix of a and b together, the period signifies that the same column and row vectors will be multiplied to each other
 
 a * b
 
@@ -342,3 +342,41 @@ a * d
     10     5
     
     Multiplies the matrix of a by the value of d
+
+**5)**
+
+Diag Function
+
+    a = [2 2 2]
+
+    a =
+
+     2     2     2
+
+    >> diag(a)
+
+    ans =
+
+     2     0     0
+     0     2     0
+     0     0     2
+     
+Eye Function
+
+    a = 2 * eye(3)
+
+    a =
+
+     2     0     0
+     0     2     0
+     0     0     2
+     
+ Zeros Function
+ 
+     a = zeros(3) + 2 * eye(3)
+
+     a =
+
+     2     0     0
+     0     2     0
+     0     0     2
