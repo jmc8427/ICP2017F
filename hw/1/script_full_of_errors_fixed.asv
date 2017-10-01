@@ -4,7 +4,7 @@ x = 2;
 y = x + 4; % is it 6? ; X is not the variable x, which = 2
 pi = 4*atan(1); % ; was out of place
 disp(pi)
-pi = 3.14159; % should be no '' or "" to set the value of pi for the next part
+pi = 3.14159; % should be ' '
 disp(tan(pi));
 c = 4^3^2^3;
 d = ((c-78564)/(c + 32)); %needed to set a variable, add parentheses

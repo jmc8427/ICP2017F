@@ -182,7 +182,7 @@ ans =
 
      2
      
-    Divides 2 by 1
+    Divides 2 by 1, the inverse of 1/2
      
 1/2
 
@@ -200,7 +200,7 @@ ans =
 
    1
    
-        LATER
+       States int8(1/2) rounds up to value 1, since int8 can only be 0 or 1
         
 int8(1/3)
 
@@ -210,7 +210,7 @@ ans =
 
    0
    
-        LATER
+        States int8(1/3) rounds down to value 0, since int8 can only be 0 or 1
    
 -5^2
 
@@ -243,12 +243,168 @@ ans =
    30
    
         Multiplies 5 by 4, divides answer by 2, then times answer by 3
+<<<<<<< HEAD
 
 
+=======
+        
+**4)**
+
+    a = [1 0; 2 1]
+
+    a =
+
+     1     0
+     2     1
+>>>>>>> b7ccc5158e932ec6e8bbbe93f3b17dcd1e307a06
       
+    b = [-1 2; 0 1]
 
+    b =
+  
+    -1     2
+     0     1   
 
+    c = [3;2]
 
+    c =
+
+     3
+     2
    
-   
+    d = 5
+
+    d =
+
+     5  
+     
+a + b
+
+    ans =
+
+     0     2
+     2     2
+     
+    This is adding the matrix of a and b together in each of their respective positions
+    
+a .* b
+
+    ans =
+
+    -1     0
+     0     1
+     
+    Multiplies the matrix of a and b together, the period signifies that the same column and row vectors will be multiplied to each other
+
+a * b
+
+    ans =
+
+    -1     2
+    -2     5
+    
+    Multiplies matrix elements of a and b
+
+a * c
+
+    ans =
+
+     3
+     8
+     
+     Multiplies matrix a by the values of c in their respective rows
+     
+a + c
+
+    ans =
+
+     4     3
+     4     3
+     
+     Adds the value of c in the first row to the value of a in the first row, and same with second row
+    
+a + d
+
+    ans =
+
+     6     5
+     7     6
+     
+     Adds the value of d to each of the numbers in the a matrix
+    
+a .* d
+
+    ans =
+
+     5     0
+    10     5
+    
+    Multiplies the matrix of a by the value of d
+    
+a * d
+
+    ans =
+
+     5     0
+    10     5
+    
+    Multiplies the matrix of a by the value of d
+
+**5)**
+
+Diag Function
+
+    a = [2 2 2]
+
+    a =
+
+     2     2     2
+
+    >> diag(a)
+
+    ans =
+
+     2     0     0
+     0     2     0
+     0     0     2
+     
+Eye Function
+
+    a = 2 * eye(3)
+
+    a =
+
+     2     0     0
+     0     2     0
+     0     0     2
+     
+ Zeros Function
+ 
+     a = zeros(3) + 2 * eye(3)
+
+     a =
+
+     2     0     0
+     0     2     0
+     0     0     2
+     
+**6)**
+
+[ScriptError](
+
+    Explanations in the script file as comments
+    
+    For the variable Persian, if you put the text in ' ', then the code runs it as a sentence
+    
+    For the variable Spanish, when you put ' ' between each word, the code creates a 1x4 matrix of each word
+
+
+**7)**
+
+mkdir mynewdir
+
+myscript
+
+[Figure](
+
 
