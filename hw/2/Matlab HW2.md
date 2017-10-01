@@ -405,3 +405,6 @@ myscript
 [Figure 1](https://github.com/jmc8427/ICP2017F/blob/master/hw/2/Figure1.fig)
 
 
+**8)**
+
+    When I tried to run myscript from my original directory, the myscript script didn't run. This is due to the fact that the myscript.m is in the newdir file, whereas I'm inputting the command in the old directory file. You must be in the command line that the myscript.m script is in to run it.
