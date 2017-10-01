@@ -385,7 +385,7 @@ Eye Function
      
 **6)**
 
-[ScriptError](
+[ScriptError](https://github.com/jmc8427/ICP2017F/blob/master/hw/2/script_full_of_errors_fixed.m)
 
     Explanations in the script file as comments
     
@@ -400,6 +400,6 @@ mkdir mynewdir
 
 myscript
 
-[Figure](
+[Figure](https://github.com/jmc8427/ICP2017F/blob/master/hw/2/Figure1.fig)
 
 
