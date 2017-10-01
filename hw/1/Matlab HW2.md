@@ -297,6 +297,8 @@ a * b
 
     -1     2
     -2     5
+    
+    Multiplies matrix elements of a and b
 
 a * c
 
@@ -382,6 +384,8 @@ Eye Function
      0     0     2
      
 **6)**
+
+
 
 
 
