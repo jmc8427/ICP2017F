@@ -200,7 +200,7 @@ ans =
 
    1
    
-        LATER
+       States int8(1/2) rounds up to value 1, since int8 can only be 0 or 1
         
 int8(1/3)
 
@@ -210,7 +210,7 @@ ans =
 
    0
    
-        LATER
+        States int8(1/3) rounds down to value 0, since int8 can only be 0 or 1
    
 -5^2
 
