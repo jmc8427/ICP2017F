@@ -243,6 +243,8 @@ ans =
    30
    
         Multiplies 5 by 4, divides answer by 2, then times answer by 3
+
+
       
 
 
