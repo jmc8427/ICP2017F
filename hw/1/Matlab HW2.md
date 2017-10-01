@@ -389,6 +389,9 @@ Eye Function
 **7)**
 
 mkdir mynewdir
+
 myscript
+
+[Figure](
 
 
