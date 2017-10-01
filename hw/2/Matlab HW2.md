@@ -400,7 +400,7 @@ mkdir mynewdir
 
 myscript
 
-[myscript](
+[myscript](https://github.com/jmc8427/ICP2017F/blob/master/hw/2/myscript.m)
 
 [Figure 1](https://github.com/jmc8427/ICP2017F/blob/master/hw/2/Figure1.fig)
 
