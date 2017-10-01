@@ -385,9 +385,13 @@ Eye Function
      
 **6)**
 
+[ScriptError](
 
-
-
+    Explanations in the script file as comments
+    
+    For the variable Persian, if you put the text in ' ', then the code runs it as a sentence
+    
+    For the variable Spanish, when you put ' ' between each word, the code creates a 1x4 matrix of each word
 
 
 **7)**
