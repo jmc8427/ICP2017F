@@ -182,7 +182,7 @@ ans =
 
      2
      
-    Divides 2 by 1
+    Divides 2 by 1, the inverse of 1/2
      
 1/2
 
@@ -382,3 +382,13 @@ Eye Function
      0     0     2
      
 **6)**
+
+
+
+
+**7)**
+
+mkdir mynewdir
+myscript
+
+
