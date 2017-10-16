@@ -28,7 +28,7 @@ Matlab Homework 3:
   	  	return
 	end
 
-	output:
+	output (when t0 = 4):
 
 	>> Gaussian(67,1.038,3.7,.0054,4,100,70)
 
@@ -36,7 +36,15 @@ Matlab Homework 3:
 
   	396.5763
 
+	output (when t0 = 20):
 
+	>> Gaussian(67,1.038,3.7,.0054,20,100,70)
+
+	ans =
+
+ 	 315.2179
+
+3)
 
 
 
