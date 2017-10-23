@@ -44,7 +44,61 @@ Matlab Homework 3:
 
  	 315.2179
 
-3)
+3)	
+	input:
+
+	function f = get_Polar(inputCartesianStructure)
+  	 	inputCartesianStructure.x = input('Enter an x value!');
+   	 	inputCartesianStructure.y = input('Enter a y value!');
+   	 	f.r = sqrt(inputCartesianStructure.x^2 + inputCartesianStructure.y^2);
+    		f.phi = (180/pi)*(acos(inputCartesianStructure.x/f.r));
+    		disp(f);
+    		return
+	end
+
+	output:
+
+	get_Polar()
+	Enter an x value!3
+	Enter a y value!4
+	    r: 5
+	    phi: 53.1301
+
+
+	ans =
+
+	  struct with fields:
+
+	    r: 5
+	    phi: 53.1301
+
+	input:
+
+	function g = get_Cart(inputPolarStructure)
+	    inputPolarStructure.r = input('Enter an r value!');
+	    inputPolarStructure.phi = input('Enter a phi value!');
+	    g.x = (inputPolarStructure.r)*(cos(inputPolarStructure.phi));
+	    g.y = (inputPolarStructure.r)*(sin(inputPolarStructure.phi));
+	    disp(g);
+	    return
+	end
+
+	output:
+
+	get_Cart()
+	Enter an r value!1
+	Enter a phi value!pi/4
+   	x: 0.7071
+    	y: 0.7071
+
+
+	ans =	
+
+	  struct with fields:
+
+	    x: 0.7071
+	    y: 0.7071
+
 
 
 
