@@ -1,3 +1,64 @@
+1)
+
+A.
+    function OutVec = convertTempWhile(InVec, str)
+    counter = 1;
+    temp_val = size(InVec);
+    if strcmp(str,'F2C')
+        OutVec = zeros(size(InVec));
+        while temp_val(2) >= counter
+            OutVec(counter) = (InVec(counter) - 32)*(5/9);
+            counter = counter + 1;
+        end
+    elseif strcmp(str,'C2F')
+        OutVec = zeros(size(InVec));
+        while temp_val(2) >= counter
+            OutVec(counter) = (InVec(counter)*(9/5)+32);
+            counter = counter + 1;
+        end
+    else
+        disp('Error!')
+    end
+end
+
+>> convertTempWhile(InVec,'C2F')
+
+ans =
+
+  Columns 1 through 7
+
+    -4     5    14    23    32    41    50
+
+  Columns 8 through 13
+
+    59    68    77    86    95   104
+
+>> convertTempWhile(InVec,'F2C')
+
+ans =
+
+  Columns 1 through 4
+
+  -28.8889  -26.1111  -23.3333  -20.5556
+
+  Columns 5 through 8
+
+  -17.7778  -15.0000  -12.2222   -9.4444
+
+  Columns 9 through 12
+
+   -6.6667   -3.8889   -1.1111    1.6667
+
+  Column 13
+
+    4.4444
+
+B.
+
+
+
+
+
 
 3)
 
@@ -39,4 +100,56 @@ MATLAB is a strange, but popular programming language
     
     >> getLargestPrime(123)
    113
+   
+7)
+
+A.
+
+    function fib()
+
+    n = input('Please enter a non-negative integer or type stop: ','s');
+    if strcmp(n,'stop')
+        return
+    else
+        n = str2double(n);
+        if isreal(n)
+            if n>=0 && round(n)==n
+                disp(['fib(',num2str(n),') = ',num2str(getFib(n))]);
+                
+                f = @() getFib(n);
+                disp([ char(9) 'average runtime: ' num2str(timeit(f))]);
+                
+                fib()
+                return
+            end
+        end
+        disp('The input argument is not a non-negative integer!');
+        fib()
+    end
+    
+    function fib = getFib(n_int)
+        if n_int == 0
+            fib = 0;
+        elseif n_int == 1
+            fib = 1;
+        else
+            fib = getFib(n_int-1) + getFib(n_int-2);
+        end
+    end
+
+end
+
+    fib(10) = 55
+
+f =
+
+  function_handle with value:
+
+    @()getFib(n)
+
+	average runtime: 2.7628e-05
+    
+B.
+
+
     
