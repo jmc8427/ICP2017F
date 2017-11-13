@@ -1,19 +1,19 @@
 1)
 
 A.
-    function OutVec = convertTempWhile(InVec, str)
+   function temp = convertTempWhile(InVec, str)
     counter = 1;
     temp_val = size(InVec);
     if strcmp(str,'F2C')
-        OutVec = zeros(size(InVec));
+        temp = zeros(size(InVec));
         while temp_val(2) >= counter
-            OutVec(counter) = (InVec(counter) - 32)*(5/9);
+            temp(counter) = (InVec(counter) - 32)*(5/9);
             counter = counter + 1;
         end
     elseif strcmp(str,'C2F')
-        OutVec = zeros(size(InVec));
+        temp = zeros(size(InVec));
         while temp_val(2) >= counter
-            OutVec(counter) = (InVec(counter)*(9/5)+32);
+            temp(counter) = (InVec(counter)*(9/5)+32);
             counter = counter + 1;
         end
     else
@@ -52,8 +52,70 @@ ans =
   Column 13
 
     4.4444
+    
+>> convertTempWhile(InVec,'O')
+Error!
 
 B.
+
+	function temp = convertTempFor(InVec,str)
+    if strcmp(str,'C2F')
+        temp = zeros(size(InVec));
+        for counter = 1:length(InVec)
+            temp(counter) = (InVec(counter)*(9/5)) + 32;
+        end
+    elseif strcmp(str,'F2C')
+        temp = zeros(size(InVec));
+        for counter = 1:length(InVec)
+            temp(counter) = (InVec(counter) -32)*(5/9);
+        end
+    else
+        disp('Error!')
+    end
+end
+
+	>> convertTempFor(InVec,'F2C')
+
+ans =
+
+  Columns 1 through 4
+
+  -28.8889  -26.1111  -23.3333  -20.5556
+
+  Columns 5 through 8
+
+  -17.7778  -15.0000  -12.2222   -9.4444
+
+  Columns 9 through 12
+
+   -6.6667   -3.8889   -1.1111    1.6667
+
+  Column 13
+
+    4.4444
+	
+	>> convertTempFor(InVec,'C2F')
+
+ans =
+
+  Columns 1 through 7
+
+    -4     5    14    23    32    41    50
+
+  Columns 8 through 13
+
+    59    68    77    86    95   104
+
+>> convertTempFor(InVec,'O')
+Error!
+
+C.
+
+
+
+
+
+	
 
 
 
