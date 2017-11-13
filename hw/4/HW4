@@ -423,4 +423,69 @@ Please enter a non-negative integer or type stop: stop
 Fibloop is much faster because is doesn't utilize recursions like the other fib code. With the recursion, getFib is called each time to find the fibonacci values, which cause a slowdown, whereas the for loop doesn't require
 this step. The for loop will increment and display the values as it runs. This doesn't require the code to keep sending info out to the recursive formula and back in to finally display.
 
+--BONUS--
+
+
+
+
+
 8)    
+
+A)
+
+function output = timeFib(n)
+if ~ischar(n) && isreal(n) && n>=0 && round(n)==n
+    output.n = n;
+    output.fib = getFib(n);
+    output.runtime =  timeit(@() getFib(n));
+else
+    error('The input argument is not a non-negative integer!');
+end
+end
+ function fib = getFib(n_int)
+        if n_int == 0
+            fib = 0;
+        elseif n_int == 1
+            fib = 1;
+        else
+            fib = getFib(n_int-1) + getFib(n_int-2);
+        end
+end
+
+ans = 
+
+  struct with fields:
+
+          n: 20
+        fib: 6765
+    runtime: 7.5726e-04
+
+function output = timeFibLoop(n)
+if ~ischar(n) && isreal(n) && n>=0 && round(n)==n
+    output.n = n;
+    output.fib = getFib(n);
+    output.runtime =  timeit(@() getFib(n));
+else
+    error('The input argument is not a non-negative integer!');
+end
+end
+ function fib = getFib(n_int)
+        if n_int == 0
+            fib = 0;
+        elseif n_int == 1
+            fib = 1;
+        else
+            fib = getFib(n_int-1) + getFib(n_int-2);
+        end
+end
+
+B)
+
+n = 1:35;
+L = length(n);
+for index = L:-1:1
+    outputTimeFib(index) = timeFib(index);
+    outputTimeFibLoop(index) = timeFibLoop(index);
+    writetable(struct2table(outputTimeFib),'fibOutput.txt')
+    writetable(struct2table(outputTimeFibLoop), 'fibLoopOutput.txt')
+end
