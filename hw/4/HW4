@@ -425,10 +425,45 @@ this step. The for loop will increment and display the values as it runs. This d
 
 --BONUS--
 
-
-
-
-
+function fibloopvec()
+    n = input('Please enter a non-negative integer or type stop: ','s');
+    if strcmp(n,'stop')
+        return
+    else
+        n = str2double(n);
+        if isreal(n)
+            if n>=0 && round(n)==n
+                disp(['fib(',num2str(n),') = ',num2str(getFib(n))]);
+                
+                f = @() getFib(n);
+                disp([ char(9) 'average runtime: ' num2str(timeit(f))]);
+                
+                return
+            end
+        end
+        disp('The input argument is not a non-negative integer!');
+        fibloopvec()
+    end
+    end
+    function fib = getFib(n_int)
+        if n_int == 0
+        elseif n_int == 1
+        else
+            FibSeq = zeros(n_int,1);
+            FibSeq(1) = 0;
+            FibSeq(2) = 1;
+            for i = 2:n_int
+               FibSeq(i+1) = FibSeq(i) + FibSeq(i-1);
+            end
+            fib = FibSeq(end);
+        end
+ end
+ 
+>> fibloopvec()
+Please enter a non-negative integer or type stop: 10
+fib(10) = 55
+	average runtime: 3.8596e-06
+	
 8)    
 
 A)
