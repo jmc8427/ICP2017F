@@ -364,5 +364,63 @@ f =
     
 B.
 
-
+function fibloop()
+    n = input('Please enter a non-negative integer or type stop: ','s');
+    if strcmp(n,'stop')
+        return    
+    else
+        n = str2double(n);
+        if isreal(n)
+            if n>=0 && round(n)==n
+                disp(['fib(',num2str(n),') = ',num2str(getFib(n))]);
+                f = @() getFib(n);
+                disp( [char(9) 'average runtime: ' num2str(timeit(f))]);
+            
+            fibloop()
+            return
+            end
+        end
+        disp('The input argument is not a non-negative integer!');
+        fib()
+    end
     
+    function fib = getFib(n_int)
+       num = 0;
+       num_two = 1;
+       for i = 2:n_int
+           fib = num+num_two;
+           num=num_two;
+           num_two=fib;
+       end
+    end
+   
+end
+
+>> fibloop()
+Please enter a non-negative integer or type stop: 10
+fib(10) = 55
+	average runtime: 1.56e-06
+Please enter a non-negative integer or type stop: 15
+fib(15) = 610
+	average runtime: 2.3853e-06
+Please enter a non-negative integer or type stop: 20
+fib(20) = 6765
+	average runtime: 2.2953e-06
+Please enter a non-negative integer or type stop: 25
+fib(25) = 75025
+	average runtime: 3.7945e-06
+Please enter a non-negative integer or type stop: 30
+fib(30) = 832040
+	average runtime: 1.3508e-06
+Please enter a non-negative integer or type stop: 35
+fib(35) = 9227465
+	average runtime: 2.4874e-06
+Please enter a non-negative integer or type stop: 
+fib(40) = 102334155
+	average runtime: 3.4387e-06
+Please enter a non-negative integer or type stop: stop
+
+Fibloop is much faster because is doesn't utilize recursions like the other fib code. With the recursion, getFib is called each time to find the fibonacci values, which cause a slowdown, whereas the for loop doesn't require
+this step. The for loop will increment and display the values as it runs. This doesn't require the code to keep sending info out to the recursive formula and back in to finally display.
+
+8)    
