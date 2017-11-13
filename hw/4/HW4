@@ -111,16 +111,167 @@ Error!
 
 C.
 
+function temp = convertTempVec(InVec,str)
+    if strcmp(str, 'C2F')
+        temp = InVec.*(9.0/5.0) + 32.0;
+    elseif strcmp(str,'F2C')
+        temp = (InVec-32.0)./1.8;
+    else
+        disp('Error!')
+    end
+end
 
+>> convertTempVec(InVec,'F2C')
 
+ans =
 
+  Columns 1 through 4
 
-	
+  -28.8889  -26.1111  -23.3333  -20.5556
 
+  Columns 5 through 8
 
+  -17.7778  -15.0000  -12.2222   -9.4444
 
+  Columns 9 through 12
 
+   -6.6667   -3.8889   -1.1111    1.6667
 
+  Column 13
+
+    4.4444
+
+>> convertTempVec(InVec,'C2F')
+
+ans =
+
+  Columns 1 through 7
+
+    -4     5    14    23    32    41    50
+
+  Columns 8 through 13
+
+    59    68    77    86    95   104
+
+>> convertTempVec(InVec,'o')
+Error!
+
+2)
+
+function temp = convertTempFor(InVec,str)
+    tic
+    if strcmp(str,'C2F')
+        temp = zeros(size(InVec));
+        for counter = 1:length(InVec)
+            temp(counter) = (InVec(counter)*(9/5)) + 32;
+        end
+    elseif strcmp(str,'F2C')
+        temp = zeros(size(InVec));
+        for counter = 1:length(InVec)
+            temp(counter) = (InVec(counter) -32)*(5/9);
+        end
+    else
+        disp('Error!')
+    end
+    toc
+end
+
+>> convertTempFor(InVec,'F2C')
+Elapsed time is 0.000798 seconds.
+
+ans =
+
+  Columns 1 through 4
+
+  -28.8889  -26.1111  -23.3333  -20.5556
+
+  Columns 5 through 8
+
+  -17.7778  -15.0000  -12.2222   -9.4444
+
+  Columns 9 through 12
+
+   -6.6667   -3.8889   -1.1111    1.6667
+
+  Column 13
+
+    4.4444
+
+function temp = convertTempWhile(InVec, str)
+    tic
+    counter = 1;
+    temp_val = size(InVec);
+    if strcmp(str,'F2C')
+        temp = zeros(size(InVec));
+        while temp_val(2) >= counter
+            temp(counter) = (InVec(counter) - 32)*(5/9);
+            counter = counter + 1;
+        end
+    elseif strcmp(str,'C2F')
+        temp = zeros(size(InVec));
+        while temp_val(2) >= counter
+            temp(counter) = (InVec(counter)*(9/5)+32);
+            counter = counter + 1;
+        end
+    else
+        disp('Error!')
+    end
+    toc
+end
+
+>> convertTempWhile(InVec,'F2C')
+Elapsed time is 0.001976 seconds.
+
+ans =
+
+  Columns 1 through 4
+
+  -28.8889  -26.1111  -23.3333  -20.5556
+
+  Columns 5 through 8
+
+  -17.7778  -15.0000  -12.2222   -9.4444
+
+  Columns 9 through 12
+
+   -6.6667   -3.8889   -1.1111    1.6667
+
+  Column 13
+
+    4.4444
+
+function temp = convertTempVec(InVec,str)
+    tic
+    if strcmp(str, 'C2F')
+        temp = InVec.*(9.0/5.0) + 32.0;
+    elseif strcmp(str,'F2C')
+        temp = (InVec-32.0)./1.8;
+    else
+        disp('Error!')
+    end
+    toc
+end
+
+>> convertTempVec(InVec,'F2C')
+Elapsed time is 0.000339 seconds.
+
+ans =
+
+  Columns 1 through 4
+
+  -28.8889  -26.1111  -23.3333  -20.5556
+
+  Columns 5 through 8
+
+  -17.7778  -15.0000  -12.2222   -9.4444
+
+  Columns 9 through 12
+
+   -6.6667   -3.8889   -1.1111    1.6667
+
+  Column 13
+
+    4.4444	
 
 3)
 
