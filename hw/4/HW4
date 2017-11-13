@@ -9,6 +9,9 @@ for numbers = 1:length(List)
     end    
 end
 
+>> extractLetter
+MATLAB is a strange, but popular programming language
+
 4)
 
     This function runs a for loop, n, which square roots an r value 2.0 and squares the following value for a max of 60 iterations on each respective math operation.
@@ -33,4 +36,7 @@ end
             continue
         end
     end
+    
+    >> getLargestPrime(123)
+   113
     
