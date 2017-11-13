@@ -1,3 +1,14 @@
+
+3)
+
+    List = { {'M','A','T','L','A','B'},{' '},{'i','s'}, {' '}, {'a'}, {' '}, {'s','t','r','a','n','g','e'},{', '}, {'b','u','t',' '}, {'p','o','p','u','l','a','r'}, {' '}, {'p','r','o','g','r','a','m','m','i','n','g',' ','l','a','n','g','u','a','g','e'}}; 
+for numbers = 1:length(List)
+    a = List{numbers};
+    for numbers_one = 1:1:length(a)
+        fprintf(a{numbers_one});
+    end    
+end
+
 4)
 
     This function runs a for loop, n, which square roots an r value 2.0 and squares the following value for a max of 60 iterations on each respective math operation.
@@ -10,4 +21,16 @@
     This continues until the eps value becomes infinitessimaly small, in which matlab will round this value to 0, and at this instance, eps will equal to 0. This is make the
     while look break because the statement will be true (1.0 = 1.0 + eps).
 
+6)
+
+    function getLargestPrime(x)
+    for i = x:-1:2
+        y = isprime(i);
+        if y == 1
+            disp(i)
+            return
+        else
+            continue
+        end
+    end
     
