@@ -1,1 +1,13 @@
-new file
+4)
+
+    This function runs a for loop, n, which square roots an r value 2.0 and squares the following value for a max of 60 iterations on each respective math operation.
+    When you run the code, it outputs a final value of 1 because of the round-off erros in numerical computaiton. In Matlab, the value r becomes exponentially smaller, 
+    and then rounds, which in turn the estimated value is squared to a value of 1.
+    
+5)
+
+    This code runs an initial value eps = 1.0 through a while loop, which when eps + 1.0 is not equal to 1.0, it displays the eps value and then divides the eps value by 2.
+    This continues until the eps value becomes infinitessimaly small, in which matlab will round this value to 0, and at this instance, eps will equal to 0. This is make the
+    while look break because the statement will be true (1.0 = 1.0 + eps).
+
+    
