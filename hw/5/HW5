@@ -1,0 +1,24 @@
+HOMEWORK 5
+
+	1)
+
+[num,txt] = xlsread('students.csv.xlsx','Sheet2','B2:B100');
+n = 1;
+newGroup = cell(33,3);
+while (n < 98)
+    cellVal = randperm(98,1);
+    new_name = txt(cellVal);
+    newGroup(n) = new_name;
+    n = n+1;
+    if n == 98
+        xlswrite('GroupNames',newGroup)
+        disp(newGroup)
+    else
+        continue
+    end
+    
+end
+
+	2)
+
+
