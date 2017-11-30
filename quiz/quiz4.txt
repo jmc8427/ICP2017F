@@ -1,0 +1,50 @@
+1)
+
+A.
+
+function output = getFacWhile(n)
+    output = 1;
+    counter = n;
+    while counter > 0
+        output = output * counter;
+        counter = counter - 1;
+    end
+end
+
+B.
+
+function output = getFacFor(n)
+    output = 1;
+    for count = n:-1:1
+        output = output * count;
+    end
+    
+C.
+
+function getFacVec(n)
+    L = (1:n);
+    factorial = prod(L);
+    disp(factorial)
+
+2)
+
+a = timeit( @()getFacWhile(1700000));
+disp([ char(9) 'Average runtime for getFacWhile(1700000): ' num2str(a)]);
+
+b = timeit( @()getFacFor(1700000));
+disp([ char(9) 'Average runtime for getFacWhile(1700000): ' num2str(b)]);
+
+c = timeit( @()getFacVec(1700000));
+disp([ char(9) 'Average runtime for getFacWhile(1700000): ' num2str(c)]);
+
+3)
+
+function getFacVec(n)
+    L = (1:n);
+    fac = sum(L);
+    factorial = fac * L;
+    x = sum(factorial);
+    disp(x)
+end
+  
+
