@@ -131,7 +131,7 @@ scatter(x, y, 1, 'MarkerFaceAlpha', .15 , 'MarkerEdgeAlpha', .15, 'MarkerFacecol
     yticks( 1);
 end
 
-	[Plot](
+	[Plot](https://github.com/jmc8427/ICP2017F/blob/master/hw/5/PlotPi.fig)
 
 function output = approxPi(n)
 c = 0;
