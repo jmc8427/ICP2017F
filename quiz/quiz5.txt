@@ -1,0 +1,23 @@
+QUIZ 5
+
+
+1)
+
+
+
+
+2)
+
+function web = robustWebRead(url)
+disp('Reading data from web...')
+disp('Done')
+try
+    web = webread(url);
+    imshow(web);
+catch
+    disp('Warning: The requested web address does not exist! Gracefully exiting...')
+end
+    
+    url = 'https://apod.nasa.gov/apod/image/1711/M33Nagy_tamed.jpg'
+
+3)
