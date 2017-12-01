@@ -83,7 +83,7 @@ scatter(exp(data(:,2)), data(:,1), 1, 'red', 'filled', 'MarkerFaceAlpha', .1, 'M
     ylim([1.0000e0 1.0000e04]);
     disp(num2str(counter));
     
-    [Scatter Plot](
+    [Scatter Plot](https://github.com/jmc8427/ICP2017F/blob/master/hw/5/fluData.fig)
 	
 
 
