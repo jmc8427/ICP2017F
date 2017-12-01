@@ -110,4 +110,4 @@ for isample = 2:nsample+1
 end
 plot(oddsOfWin)
 
-
+	[MCHall Graph](https://github.com/jmc8427/ICP2017F/blob/master/hw/5/MCHall.fig)
