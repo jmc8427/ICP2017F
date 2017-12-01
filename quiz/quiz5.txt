@@ -3,8 +3,19 @@ QUIZ 5
 
 1)
 
+webURL = 'http://www.shahmoradi.org/ICP2017F/quiz/5-problems/chain.txt';
+dataweb = webread('http://www.shahmoradi.org/ICP2017F/quiz/5-problems/chain.txt');
+dataweb = strsplit(dataweb, '\n');
 
+datawebExcel = xlswrite(dataweb);
+dataweb
 
+    xlabel('Sample Number');
+    ylabel('Growth Rate');
+    xlim([10^0 10^6]);
+    xticks([10^0 10^1 10^2 10^3 10^4 10^5 10^6]);
+    ylim([-2.4 -0.4]);
+    yticks([-2.4 -2.2 -2 -1.8 -1.6 -1.4 -1.2 -1 -0.8 -0.6 -0.4]);
 
 2)
 
