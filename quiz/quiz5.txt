@@ -21,3 +21,5 @@ end
     url = 'https://apod.nasa.gov/apod/image/1711/M33Nagy_tamed.jpg'
 
 3)
+
+GCF is the function handle and GCA is the axes of the graph.
