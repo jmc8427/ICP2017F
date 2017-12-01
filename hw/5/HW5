@@ -88,6 +88,9 @@ scatter(exp(data(:,2)), data(:,1), 1, 'red', 'filled', 'MarkerFaceAlpha', .1, 'M
 
 
 	3)
+	
+	With the Monte Carlo Problem, it is in your best interest to switch doors, because your odds of winning with your original
+	door is just around 33-35%, whereas if you switch, there is a 65-67% chance to win.
 
 rng('shuffle');
 nsample = 1000;
