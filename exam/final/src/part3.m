@@ -1,0 +1,12 @@
+gomper=@(p,t) 100000*exp(p(1)*(1-exp(-p(2).*t)));
+coefs=nlinfit(x,y,gomper,[7 .1]);
+h=figure;
+errorbar(x,y,error,'LineWidth',2,'Marker','o','MarkerSize',4);
+hold on;
+x=0:24;
+plot(x,gomper(coefs,x),'LineWidth',2);
+xlabel('Time [days]');
+ylabel('Tumor Cell Count');
+title('Gompertzian Fit to Rat''s Brain Tumor Growth','FontSize',16);
+legend('Experimental Data','Gompertzian Fit');
+saveas(h,'C:\Users\atros27\Documents\MATLAB\final\results\error_graph_with_best_fit.fig');
