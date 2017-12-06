@@ -48,4 +48,4 @@ errorbar(x,y,error,'LineWidth',2,'Marker','o','MarkerSize',4);
 xlabel('Time [days]');
 ylabel('Tumor Cell Count');
 title('Rat''s Brain Tumor Growth','FontSize',16);
-saveas(h,'C:\Users\atros27\Documents\MATLAB\final\results\error_graph.fig');
+saveas(h,'C:\Users\atros27\Documents\MATLAB\final\results\error_graph.png');
