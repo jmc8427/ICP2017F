@@ -21,5 +21,5 @@ for t=10:2:22
     a=colorbar('Position',[hp4(1)+hp4(3)+.01 hp4(2) .05 hp4(2)+hp4(3)*4.5]);
     caxis([0 4*10^4]);
     ylabel(a,'Tumor Count per Voxel');
-    saveas(h,['C:\Users\atros27\Documents\MATLAB\final\results\time' num2str(t) 'graph.fig']);
+    saveas(h,['C:\Users\atros27\Documents\MATLAB\final\results\time' num2str(t) 'graph.png']);
 end
