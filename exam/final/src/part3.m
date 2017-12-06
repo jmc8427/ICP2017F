@@ -9,4 +9,4 @@ xlabel('Time [days]');
 ylabel('Tumor Cell Count');
 title('Gompertzian Fit to Rat''s Brain Tumor Growth','FontSize',16);
 legend('Experimental Data','Gompertzian Fit');
-saveas(h,'C:\Users\atros27\Documents\MATLAB\final\results\error_graph_with_best_fit.fig');
+saveas(h,'C:\Users\atros27\Documents\MATLAB\final\results\error_graph_with_best_fit.png');
