@@ -17,7 +17,7 @@ This is the portion I added to the provided script:
         subPlot.Title.String = ['z = ', num2str(sliceNumber)];
         subPlot.CLim = colorLimits;
 
-The full MatLab file will be named 'hw6prob1.m' in this folder.
+The full MatLab file is [here](https://github.com/jmc8427/ICP2017F/blob/master/hw/6/hw6prob1.m)
 
 2)
 
@@ -57,7 +57,7 @@ This is the portion I added to the provided script from question 1:
         subPlot.Title.String = ['z = ', num2str(sliceNumber)];
         subPlot.CLim = colorLimits;
 
-The full script file will be named 'hw6prob2.m' in this folder also.
+The full script file is [here](https://github.com/jmc8427/ICP2017F/blob/master/hw/6/hw6prob2.m)
 
 3)
 
