@@ -84,6 +84,12 @@ And this is the script to call the function:
 	getTotalLogProb(Param);
 	fminsearch(@getTotalLogProb, Param)
 
+This gives the following output:
+
+	
+	ans =
+
+	   -0.0820    1.0043
 	
 
 
